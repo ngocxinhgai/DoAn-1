@@ -27,5 +27,12 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
 Route::get('logout', 'HomeController@logout')->name('logout');
 
 Route::group(['middleware' => 'auth'], function() {
-	Route::get('/', 'HomeController@index')->name('home');
+	Route::get('/', 'HomeController@index');
+
+	Route::get('/users/{user_id}/edit', [
+		'as'	=> 'user-edit',
+		'uses'	=> 'HomeController@getEditProfile',
+	]);
+
+	Route::post('/users/{user_id}/edit', 'HomeController@postEditProfile');
 });
