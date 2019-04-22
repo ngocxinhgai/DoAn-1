@@ -1,0 +1,71 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%
+}
+/*đặt kích thước cho html và body là 1 màn hình
+ đặt html rồi mới đặt được body bạn có thể test thử đặt mỗi body*/
+p{
+    color:black;
+}
+/* đặtmàu chữ của thẻ p là màu trắng*/
+.khoito{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/*đặt hình nền và kích thước cho khoito là 1 màn hình*/
+.manhinhden {
+    /*background-color: #00000059;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*đặt màu background #00000059 lên hình nền
+  và đặt flex box đưa khối đen ra giữa*/
+
+tr:nth-child(even){background-color: #EFF8FB}
+
+/*đặt kích thước cho khối đen
+và đặt flexbox chia các layout bên trong khối đen*/
+
+._1khoi{
+    width: 175px;
+    height: 93px;
+    justify-content: space-between;
+
+}
+._1khoi i{
+    color:white;
+    float:left;
+    font-size: 26px;
+    height: 90px;
+    margin-right: 20px;
+
+}
+._1khoi p{
+    font-size: 15px;
+}
+
+.border-top-custom {
+    border-top : 2px solid #FAAC58;
+    background-color: #F5D0A9;
+}
+
+.border-right-custom {
+    border-right: 2px;
+}
+
+.height_tr {
+    height: 50px;
+}
+
+.scroll-custom {
+    height: 400px;
+    overflow:scroll;
+}
